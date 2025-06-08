@@ -252,7 +252,7 @@ This alignment between low loss, moderate price, and low symboling underscores V
 
 #### BMW and Peugeot are High-Risk Luxury Makes
 Both BMW and Peugeot are concerning:
--   BMW shows the highest normalized losses (~150+) despite bbeing a high-cost brand (~$25,000 - $30,000).
+-   BMW shows the highest normalized losses (~150+) despite being a high-cost brand (~$25,000 - $30,000).
 -   Peugeot exhibits very high losses (~140+) while being less expensive (~$15,000 - $18,000).
 -   BMW's symboling is low (around 0), which does not reflect its actual insurance risk, suggesting a misalignment between manufacturer expectations and real-world loss experience.
 
