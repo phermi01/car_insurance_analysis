@@ -124,7 +124,7 @@ These are luxury brands that typically incur higher repair/replacement costs, ma
 #### Affordable Premium Tier
 -   Alfa-Romeo, Peugeot, and Saab occupy the lower end of the top 10, averaging under $15K. Though ranked among the top 10 by price, they are affordable by luxury standards. Potentially older models or less market penetration may affect availability of parts and repiar costs, which can still drive claim sizes.
  
-### Recommendations for Insurance Companies
+### Recommendations
 -   Premiums for luxury and premium vehicle segment should reflect higher potential claim values, even if accident frequency is low.
 -   Upper-mid range vehicles may merit adjusted premiums, balancing between moderate risk and repair costs.
 -   Affordable premium tier could attract higher-than-expected losses relative to their price, particularly if parts availability is limited or niche.
@@ -172,7 +172,7 @@ Normalized losses include both frequency and severity. Many of the makes listed 
 #### Need for Nuanced Premium Segmentation
 This chart demonstrates that risk is not uniform across vehicle brands and cannot be predicted solely by price, type, or country of origin. Both economy and luxury brands are represented here, underscoring the need for granular segmentation strategies.
 
-### Recommendations for Insurance Companies
+### Recommendations
 -  BMW, Peugeot, and Audi pose the highest insurance risks and should be treated with stricter underwriting and higher base premiums.
 -   Brands like Mitsubishi and Nissan signal the importance of examining driver behavior and demographics, not just vehicle type.
 -   Luxury vehicle repair costs should be heavily factored into claims cost projections, even for vehicles that appear safer.
@@ -207,7 +207,7 @@ plt.show()
         -   Higher claim frequencies (e.g., driven by younger or high-risk profiles)
      -   Higher utilization and lower safety features
 
-### Recommendations for Insurance Companies
+### Recommendations
 -   Insurers are advised to consider specialized underwriting policies or fleet-based for diesel owners.
 -   Insurers are encourage to  use stratified pricing tiers with gas-powered vehicles, distinguishing economy from premium.
 
@@ -252,8 +252,8 @@ This alignment between low loss, moderate price, and low symboling underscores V
 
 #### BMW and Peugeot are High-Risk Luxury Makes
 Both BMW and Peugeot are concerning:
--   BMW shows the highest normalized losses (~150+), despite being a high-cost brand (~$25,000 - $30,000).
--   Peugeot exhibits very high losses (~140+), while being less expensive (~$15,000 - $18,000).
+-   BMW shows the highest normalized losses (~150+) despite bbeing a high-cost brand (~$25,000 - $30,000).
+-   Peugeot exhibits very high losses (~140+) while being less expensive (~$15,000 - $18,000).
 -   BMW's symboling is low (around 0), which does not reflect its actual insurance risk, suggesting a misalignment between manufacturer expectations and real-world loss experience.
 
 #### Mixed Symboling Accuracy: Manufacturer Estimates Are Inconsistent
@@ -285,7 +285,7 @@ In the top panel:
 -   Both makes are in the bottom-10 panel with moderate prices(~$9,000-$10,000) and losses around 110-120.
 -   Their symboling is high (2), which somewhat overstate their risk.
 
-#### Recommendations for Insurance Companies.
+#### Recommendations
 -   Incorporate Actual Loss Data Over Symboling Alone: While syboling offers a manufacturer perspective, real-world loss experience varies significantly. Use it as a supporting feature, not a primary driver.
 -   Reward efficient risk makes like Volvo, Subaru, and Chevrolet with premium incentives or and inclusion in preferred policy groups.
 -   High-risk brands like BMW, Peugeot, Mitsubishi, and Dodge should be flagged for actuarial review because they demonstrate poor risk profiles and require targeted pricing reviews and possibly stricter underwriting criteria.
@@ -332,7 +332,7 @@ Some brands maintain consistent risk profiles regardless of fuel type, such as:
 -   Mazda, Jaguar, and Renault show little variance between fuel types, with average losses around 120.
 This indicates that for these makes, fuel type may be a non-significant factor in determining risk, and pricing should focus more on other vehicle or driver-level factors.
 
-### Recommendations for Insurance Companies.
+### Recommendations
 -   Group makes into risk tiers based on their average normalized losses. For instance:
     -   High-risk tier: BMW, Peugeot, Audi.
     -   Mid-risk tier: Mazda, Mitsubishi, Jaguar.
@@ -387,7 +387,7 @@ These high correlations suggest that many of these physical and performance attr
 #### Fuel Efficiency (MPG) vs. Risk
 Highway MPG (r = -0.15) and City MPG (r = -0.19) both show weak negative correlations with normalized losses. This suggests that more fuel-efficient cars may tend to be safer, potentially due to their lower performance profiles or more conservative usage.
 
-### Recommendations for Insurance Companies.
+### Recommendations
 -   Use symboling as a core risk feature because its strong correlation with normalized losses makes it highly predictive of claim behavior. Base premiums can be scaled accordingly.
 -   Design risk tiers based on physical characteristics by grouping vehicles into broad risk categories using height, wheel base, and engine size. Larger and taller vehicles generally pose lower risk.
 -   Avoid overreliance on price because despite intuitive appeal, price does not predict loss frequency or severity. Focus on mechanical and performance traits instead.
