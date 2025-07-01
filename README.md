@@ -111,7 +111,7 @@ plt.show()
 ```
 
 ### Results
-![Visualization of Top 10 Car Makes by Price](car_insurance\Images\1_top_10_car_makes_by_price.png)
+![Visualization of Top 10 Car Makes by Price](car_insurance/Images/1_top_10_car_makes_by_price.png)
 
 ### Insights
 #### Luxury and Premium Vehicle Segment
@@ -151,7 +151,7 @@ plt.show()
 
 ### Results
 
-![Visualization of Top 10 Car Makes by Normalized Losses](car_insurance\Images\2_top_10_car_makes_by_normalized_losses.png)
+![Visualization of Top 10 Car Makes by Normalized Losses](car_insurance/Images/2_top_10_car_makes_by_normalized_losses.png)
 
 ### Insights
 #### BMW Has the Highest Normalized Losses
@@ -192,7 +192,7 @@ plt.show()
 ```
 ### Results
 
-![Visualization of car price and fuel type](car_insurance\Images\3_car_price_by_fuel_type.png)
+![Visualization of car price and fuel type](car_insurance/Images/3_car_price_by_fuel_type.png)
 
 ### Insights
 #### Diesel Cars
@@ -234,7 +234,7 @@ cbar.set_label('Average Symboling')
 plt.show()
 ```
 ### Results
-![Visualization of car price, noralized losses, and symboling](car_insurance\Images\4_normalized_losses_price_and_symboling_of_top_and_bottom_10_cars.png)
+![Visualization of car price, noralized losses, and symboling](car_insurance/Images/4_normalized_losses_price_and_symboling_of_top_and_bottom_10_cars.png)
 
 
 ### Insights
@@ -305,7 +305,7 @@ plt.title('Average Normalized Losses by Make and Fuel Type')
 plt.show()
 ``` 
 ### Results
-![Visualization of  car makes, noralized losses, and fuel type](car_insurance\Images\5_heatmap_of_car_makes_normalized_losses_and_fuel_type.png)
+![Visualization of  car makes, noralized losses, and fuel type](car_insurance/Images/5_heatmap_of_car_makes_normalized_losses_and_fuel_type.png)
 
 ### Insights
 #### High-Risk Manufacturers
@@ -356,7 +356,7 @@ plt.title('Correlation Heatmap of Car Features')
 plt.show()
 ```
 ### Results
-![Correlation heatmap of car fearures](car_insurance\Images\6_correlation_heatmap_of_car_features.png)
+![Correlation heatmap of car fearures](car_insurance/Images/6_correlation_heatmap_of_car_features.png)
 
 ### Insights
 #### Factors Positively Correlated with Normalized Losses
