@@ -113,7 +113,7 @@ plt.show()
 ### Results
 ![Visualization of Top 10 Car Makes by Price](car_insurance/Images/1_top_10_car_makes_by_price.png)
 
-### Insights
+### Insights:
 #### Luxury and Premium Vehicle Segment
 -   Jaguar, Mercedes-Benz, Porsche, and BMW dominates the top four spots, with average prices ranging from $25K to over $35k. 
 These are luxury brands that typically incur higher repair/replacement costs, may involve specialized parts and services, and are targets for theft or vandalism in some areas.
@@ -124,7 +124,7 @@ These are luxury brands that typically incur higher repair/replacement costs, ma
 #### Affordable Premium Tier
 -   Alfa-Romeo, Peugeot, and Saab occupy the lower end of the top 10, averaging under $15K. Though ranked among the top 10 by price, they are affordable by luxury standards. Potentially older models or less market penetration may affect availability of parts and repiar costs, which can still drive claim sizes.
  
-### Recommendations
+### Recommendations:
 -   Premiums for luxury and premium vehicle segment should reflect higher potential claim values, even if accident frequency is low.
 -   Upper-mid range vehicles may merit adjusted premiums, balancing between moderate risk and repair costs.
 -   Affordable premium tier could attract higher-than-expected losses relative to their price, particularly if parts availability is limited or niche.
@@ -153,7 +153,7 @@ plt.show()
 
 ![Visualization of Top 10 Car Makes by Normalized Losses](car_insurance/Images/2_top_10_car_makes_by_normalized_losses.png)
 
-### Insights
+### Insights:
 #### BMW Has the Highest Normalized Losses
 BMW tops the list, signaling that on average, it incurs the highest adjusted insurance losses among all brands. This suggests either a high claim frequency, high repair costs, or both. BMWs are generally performance-oriented and expensive to repair, and they may be driven in ways that expose them to higher accident risk.
 
@@ -172,7 +172,7 @@ Normalized losses include both frequency and severity. Many of the makes listed 
 #### Need for Nuanced Premium Segmentation
 This chart demonstrates that risk is not uniform across vehicle brands and cannot be predicted solely by price, type, or country of origin. Both economy and luxury brands are represented here, underscoring the need for granular segmentation strategies.
 
-### Recommendations
+### Recommendations:
 -  BMW, Peugeot, and Audi pose the highest insurance risks and should be treated with stricter underwriting and higher base premiums.
 -   Brands like Mitsubishi and Nissan signal the importance of examining driver behavior and demographics, not just vehicle type.
 -   Luxury vehicle repair costs should be heavily factored into claims cost projections, even for vehicles that appear safer.
@@ -237,7 +237,7 @@ plt.show()
 ![Visualization of car price, noralized losses, and symboling](car_insurance/Images/4_normalized_losses_price_and_symboling_of_top_and_bottom_10_cars.png)
 
 
-### Insights
+### Insights:
 #### Price Is Not a Direct Proxy for Risk
 A crucial insight is that higher average price does not automatically lead to higher normalized insurance losses:
 -   Volvo, although a high-priced brand, shows the lowest average losses among all makes in both panels. This implies high safety standards, cautious driving behaviour, and favourable claim profiles.
@@ -285,7 +285,7 @@ In the top panel:
 -   Both makes are in the bottom-10 panel with moderate prices(~$9,000-$10,000) and losses around 110-120.
 -   Their symboling is high (2), which somewhat overstate their risk.
 
-#### Recommendations
+### Recommendations:
 -   Incorporate Actual Loss Data Over Symboling Alone: While syboling offers a manufacturer perspective, real-world loss experience varies significantly. Use it as a supporting feature, not a primary driver.
 -   Reward efficient risk makes like Volvo, Subaru, and Chevrolet with premium incentives or and inclusion in preferred policy groups.
 -   High-risk brands like BMW, Peugeot, Mitsubishi, and Dodge should be flagged for actuarial review because they demonstrate poor risk profiles and require targeted pricing reviews and possibly stricter underwriting criteria.
@@ -297,7 +297,7 @@ In the top panel:
 
 ## 5.  What correlation  exists between normalized losses, car make and fuel type?
 
-#### Visualize Data
+### Visualize Data
 ```python
 plt.figure(figsize=(10,8))
 sns.heatmap(car_1_pivot, annot=True, cmap='YlOrRd')
@@ -307,7 +307,7 @@ plt.show()
 ### Results
 ![Visualization of  car makes, noralized losses, and fuel type](car_insurance/Images/5_heatmap_of_car_makes_normalized_losses_and_fuel_type.png)
 
-### Insights
+### Insights:
 #### High-Risk Manufacturers
 Some car brands consistently show higher normalized losses, indicating greater insurance risk regardless of fuel type. These include:
 -   BMW and Peugeot exhibit among the highest average losses (around 150), suggesting frequent or costly claims. These brands likely attract more aggressive driving behaviours or carry higher repair costs.
@@ -332,7 +332,7 @@ Some brands maintain consistent risk profiles regardless of fuel type, such as:
 -   Mazda, Jaguar, and Renault show little variance between fuel types, with average losses around 120.
 This indicates that for these makes, fuel type may be a non-significant factor in determining risk, and pricing should focus more on other vehicle or driver-level factors.
 
-### Recommendations
+### Recommendations:
 -   Group makes into risk tiers based on their average normalized losses. For instance:
     -   High-risk tier: BMW, Peugeot, Audi.
     -   Mid-risk tier: Mazda, Mitsubishi, Jaguar.
@@ -358,7 +358,7 @@ plt.show()
 ### Results
 ![Correlation heatmap of car fearures](car_insurance/Images/6_correlation_heatmap_of_car_features.png)
 
-### Insights
+### Insights:
 #### Factors Positively Correlated with Normalized Losses
 Features with a moderate positive correlation to normalized losses are potentially indicative of higher claim risk:
 -   Symboling (r = 0.46): This is the most strongly correlated feature with normalized losses. “Symboling” is a manufacturer’s assigned risk rating for the vehicle; higher values likely denote sportier or riskier cars. Insurers should give significant weight to this when assessing base risk.
@@ -387,7 +387,7 @@ These high correlations suggest that many of these physical and performance attr
 #### Fuel Efficiency (MPG) vs. Risk
 Highway MPG (r = -0.15) and City MPG (r = -0.19) both show weak negative correlations with normalized losses. This suggests that more fuel-efficient cars may tend to be safer, potentially due to their lower performance profiles or more conservative usage.
 
-### Recommendations
+### Recommendations:
 -   Use symboling as a core risk feature because its strong correlation with normalized losses makes it highly predictive of claim behavior. Base premiums can be scaled accordingly.
 -   Design risk tiers based on physical characteristics by grouping vehicles into broad risk categories using height, wheel base, and engine size. Larger and taller vehicles generally pose lower risk.
 -   Avoid overreliance on price because despite intuitive appeal, price does not predict loss frequency or severity. Focus on mechanical and performance traits instead.
@@ -400,9 +400,8 @@ considering offering discounts for cars with high MPG and modest performance spe
 Throughout this project, I deepened my understanding of the car insurance underwriting and risk analysis and enhanced my technical skills in Python, especially in data manipulation and visualization. Here are a few specific things I learned:
 -   Advanced Python Usage: Utilizing libraries such as Pandas for data manipulation, Seaborn and Matplotlib for data visualization, and other libraries helped me perform complex data analysis tasks more efficiently.
 -   Data Cleaning importance: I learned that thorough data cleaning and preparation are crucial before any meaningful analysis can be conducted, ensuring the accuracy of insights derived from the data.
--   
 
-# Insights
+# General Insights
 This project provided several general insights for insurance companies for assessing and determining underwriting for cars:
 
 -   Luxury Doesn’t Always Mean Low Risk
@@ -417,7 +416,7 @@ Diesel vehicles tend to show lower and more consistent losses, possibly due to m
 Physical and performance attributes (engine size, horsepower, curb weight, etc.) have weak to moderate correlation with losses. Symboling has the strongest link (r = 0.46), while others like MPG, height, and wheelbase show weak negative correlations. These factors must be considered together, especially given high inter-feature correlations, to avoid multicollinearity in predictive models.
 
 # General Recommendations
-Below are my recommendation for insurance companies based on my indept analysis of the car insurance dataset:
+Below are my recommendations for insurance companies based on my indept analysis of the car insurance dataset:
 
 -   Adopt tiered premium strategies based on risk, not price by grouping vehicles into high-, mid-, and low-risk tiers using normalized loss data, rather than MSRP, and align premiums accordingly—rewarding low-risk brands like Volvo and penalizing high-risk ones like BMW and Peugeot.
 
